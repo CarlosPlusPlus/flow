@@ -2,7 +2,7 @@
 SECRET_KEY_BASE:		"Your Secret Token"
 
 # Database Credentials
-DB_APADPTER:	postgresql
+DB_ADAPTER:		postgresql
 ENCODING:			utf8
 MIN_MESSAGES:	warning
 POOL:					5

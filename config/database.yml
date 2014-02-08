@@ -1,5 +1,5 @@
 development: &default
-  adapter:  		<%= ENV['DB_APADPTER'] %>
+  adapter:  		<%= ENV['DB_ADAPTER'] %>
   encoding: 		<%= ENV['ENCODING'] %>
   min_messages: <%= ENV['MIN_MESSAGES'] %>
   pool: 				<%= ENV['POOL'] %>

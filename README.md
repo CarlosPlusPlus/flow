@@ -20,3 +20,7 @@ This website was bootstrapped by **[Suspenders](https://github.com/thoughtbot/su
 ### Code Status
 
 [![Code Climate](https://codeclimate.com/github/CarlosPlusPlus/web-Flow.png)](https://codeclimate.com/github/CarlosPlusPlus/web-Flow)
+
+### License Information
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Flow Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/CarlosPlusPlus/web-Flow" property="cc:attributionName" rel="cc:attributionURL">Carlos J Lazo</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
