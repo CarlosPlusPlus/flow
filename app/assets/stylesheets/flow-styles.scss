@@ -4,6 +4,9 @@ body {
   font-size: 18px;
 }
 
+.f-green2 { color: #95ce53 } /*GREEN*/
+.f-brown  { color: #A5998E } /*BROWN*/
+
 .process-space { 
   padding: 150px 0
 }
@@ -17,6 +20,10 @@ body {
     border-radius: 4px; 
   }
 }
+
+.space-why 			{ padding: 120px 0; border-top: 1px solid #eee }
+.process-space 	{ padding: 120px 0; }
+.process-margin { margin-top: 50px; }
 
 #process {
   background: url(background5.1.jpg) center center;
@@ -38,8 +45,12 @@ body {
   }
 }
 
-#clients {
-  background: url(clients.jpg);
+#clients  { background: url(clients.jpg); }
+#clients2 { background: url(background6.jpg); }
+
+#clients, #clients2 {
+	-webkit-background-size: cover; -moz-background-size:cover;
+ 	-o-background-size: cover; background-size:cover;
 
   h3 {
     padding-bottom: 5px;
