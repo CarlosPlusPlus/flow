@@ -1,28 +1,18 @@
-#web-Flow
+## Website: Flow
 
-###This GitHub repo will hold the work for creation of the Flow website.
+This website was made for **Flow**, (DESCRIPTION **TBD**).
 
----------------
-Getting Started
----------------
+Their website can be found at: **TBD**
 
-This repository comes equipped with a self-setup script!
+### Technical Information
 
-    % ./bin/setup
+This website was built with the following technologies:
 
-After setting up, you can run the application using [foreman]:
+- **[Rails 4.0](http://rubyonrails.org/)** back-end framework in the **[Ruby](www.ruby.org)** programming language.
+- Integrated **[KendoUI](https://wrapbootstrap.com/theme/kendo-creative-multipurpose-template-WB0DX869H)** theme purchased from **[Wrap Bootstrap](http://wrapbootstrap.com)**.
+	- **HTML5** with **[Twitter Bootstrap 3](http://getbootstrap.com/)** for responsive layouts.
+	- **CSS3** and **JavaScript** for front-end styling and content.
+- **TBD** >>> ActionMailer implementation.
+- **TBD** >>> PayPal API integration.
 
-    % foreman start
-
-[foreman]: http://ddollar.github.io/foreman/
-
-----------
-Guidelines
-----------
-
-Use the following guides for getting things done, programming well, and
-programming in style.
-
-* [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
-* [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
-* [Style](http://github.com/thoughtbot/guides/blob/master/style)
+This website was bootstrapped by **[Suspenders](https://github.com/thoughtbot/suspenders)** from **[Thoughtbot](https://github.com/thoughtbot)**.
