@@ -1,0 +1,36 @@
+.start-saving {
+  float: left;
+}
+
+.learn-more {
+  margin-left: 20px;
+  background: rgba(65, 147, 191, 0.3);
+}
+
+.learn-more:hover {
+  background: rgba(65, 147, 191, 0.4);
+}
+
+.service-box {
+  text-align: center;
+
+  img { 
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px; 
+  }
+}
+
+ #features {
+  background: url("../images/background5.1.jpg") center center;
+}
+
+// Mobile Web Media Queries
+
+@media screen and (max-width: 410px) { 
+  .learn-more {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .desktop { display: none }
+}
