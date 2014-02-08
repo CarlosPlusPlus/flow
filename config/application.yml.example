@@ -13,6 +13,6 @@ TST_DB:				Tst_DB_Name
 PRD_DB:				Prd_DB_Name
 
 # Deployment Credentials
-APP_NAME:				"AppName"
-APP_REPO:				"GitHub Repo Address"
-APP_SERVER_IP:	"NNN.NNN.NNN.NNN"
+APP_NAME:				AppName
+APP_REPO:				GitHub Repo Address
+APP_SERVER_IP:	NNN.NNN.NNN.NNN
