@@ -123,7 +123,7 @@ img.keep-original {
 }
 .slides-pagination a.current { background: white }
 .slides-container li {
-    background: url(background3.1.jpg) no-repeat center center;
+    background: url(image_path('background3.1.jpg')) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -276,7 +276,7 @@ img.keep-original {
 /* FEATURES / FULL SERVICE LIST SECTION
    ================================================== */
 #process {
-    background: url(background5.1.jpg) center center;
+    background: url(image_path('background5.1.jpg')) center center;
     -webkit-background-size: cover; -moz-background-size:cover;
     -o-background-size: cover; background-size:cover;
 }
@@ -594,7 +594,7 @@ p.meta a {
 /* CLIENTS LOGOS SECTION
    ================================================== */
 #clients {
-    background: url(clients.jpg);
+    background: url(image_path('clients.jpg'));
     -webkit-background-size: cover; -moz-background-size:cover;
     -o-background-size: cover; background-size:cover;
 }
@@ -604,7 +604,7 @@ p.meta a {
 }
 
 #clients2 {
-    background: url(background6.jpg);
+    background: url(image_path('background6.jpg'));
     -webkit-background-size: cover; -moz-background-size:cover;
     -o-background-size: cover; background-size:cover;
 }
@@ -624,7 +624,7 @@ p.meta a {
 /* SUBHEADER USED FOR INTERNAL PAGES
    ================================================== */
 .subheader {
-    background: url(clients.jpg);
+    background: url(image_path('clients.jpg'));
     -webkit-background-size: cover; -moz-background-size:cover;
     -o-background-size: cover; background-size:cover;
     display: block;
@@ -657,7 +657,7 @@ p.meta a {
     padding: 25px 0;
 }
 #quote {
-    background: url(clients.jpg) center center fixed;
+    background: url(image_path('clients.jpg')) center center fixed;
     -webkit-background-size: cover; -moz-background-size:cover;
     -o-background-size: cover; background-size:cover;
     padding: 35px auto;
