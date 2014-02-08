@@ -1,11 +1,11 @@
 development: &default
-  adapter: postgresql
-  database: Flow_development
-  encoding: utf8
-  min_messages: warning
-  pool: 5
-  timeout: 5000
+  adapter:  		<%= ENV['DB_APADPTER'] %>
+  encoding: 		<%= ENV['ENCODING'] %>
+  min_messages: <%= ENV['MIN_MESSAGES'] %>
+  pool: 				<%= ENV['POOL'] %>
+  timeout: 			<%= ENV['TIMEOUT'] %>
+  database: 		<%= ENV['DEV_DB'] %>
 
 test:
   <<: *default
-  database: Flow_test
+  database: 		<%= ENV['TST_DB'] %>

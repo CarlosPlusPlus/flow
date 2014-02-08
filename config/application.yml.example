@@ -1,5 +1,5 @@
 # Secret Token for Session Persistence
-SECRET_TOKEN:		"Your Secret Token"
+SECRET_KEY_BASE:		"Your Secret Token"
 
 # Database Credentials
 DB_APADPTER:	postgresql
