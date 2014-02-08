@@ -309,7 +309,7 @@ img.keep-original {
 /* FEATURES / FULL SERVICE LIST SECTION
    ================================================== */
 #features {
-    background: url("../images/IMG_3130.jpg");
+    background: url(IMG_3130.jpg);
     -webkit-background-size: cover; -moz-background-size:cover;
     -o-background-size: cover; background-size:cover;
 }
@@ -625,7 +625,7 @@ p.meta a {
 /* CLIENTS LOGOS SECTION
    ================================================== */
 #clients {
-    background: url("../images/clients.jpg") center center fixed;
+    background: url(clients.jpg) center center fixed;
     -webkit-background-size: cover; -moz-background-size:cover;
     -o-background-size: cover; background-size:cover;
 }
@@ -639,7 +639,7 @@ p.meta a {
 /* SUBHEADER USED FOR INTERNAL PAGES
    ================================================== */
 .subheader {
-    background: url("../images/clients.jpg");
+    background: url(clients.jpg);
     -webkit-background-size: cover; -moz-background-size:cover;
     -o-background-size: cover; background-size:cover;
     display: block;
@@ -672,15 +672,12 @@ p.meta a {
     padding: 25px 0;
 }
 #quote {
-    background: url("../images/clients.jpg") center center fixed;
+    background: url(clients.jpg) center center fixed;
     -webkit-background-size: cover; -moz-background-size:cover;
     -o-background-size: cover; background-size:cover;
     padding: 35px auto;
 }
 #quote i { font-size: 25px }
-
-
-
 
 /* BLOG
    ================================================== */
