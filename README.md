@@ -16,3 +16,7 @@ This website was built with the following technologies:
 - **TBD** >>> PayPal API integration.
 
 This website was bootstrapped by **[Suspenders](https://github.com/thoughtbot/suspenders)** from **[Thoughtbot](https://github.com/thoughtbot)**.
+
+### Code Status
+
+[![Code Climate](https://codeclimate.com/github/CarlosPlusPlus/web-Flow.png)](https://codeclimate.com/github/CarlosPlusPlus/web-Flow)
