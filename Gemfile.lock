@@ -78,6 +78,9 @@ GEM
     factory_girl_rails (4.3.0)
       factory_girl (~> 4.3.0)
       railties (>= 3.0.0)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     flutie (2.0.0)
     foreman (0.63.0)
       dotenv (>= 0.7)
@@ -206,6 +209,7 @@ DEPENDENCIES
   delayed_job_active_record (>= 4.0.0)
   email_validator
   factory_girl_rails
+  figaro
   flutie
   foreman
   high_voltage

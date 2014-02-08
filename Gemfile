@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.0'
 
+# Gems provided via Suspenders
 gem 'airbrake'
 gem 'bourbon'
 gem 'coffee-rails'
@@ -19,6 +20,9 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'unicorn'
+
+# Custom gems
+gem 'figaro'
 
 group :development do
   gem 'better_errors'
