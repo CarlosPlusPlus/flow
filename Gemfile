@@ -21,8 +21,15 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'unicorn'
 
-# Custom gems
+###############################
+# Gems added post-suspenders. #
+###############################
+
 gem 'figaro'
+
+###############################
+#            END              #
+###############################
 
 group :development do
   gem 'better_errors'

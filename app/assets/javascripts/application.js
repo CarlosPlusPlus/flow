@@ -10,6 +10,18 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//	Require JavaScript for KendoUI
+//
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
+//= require jquery.scrollTo
+//= require jquery.nav
+//= require elementTransitions.min
+//= require jquery.superslides
+//= require jquery.sticky
+//= require jquery.isotope.min
+//= require jquery.easing.1.3
+//= require slimbox2
+//= require custom
 //= require_tree .
