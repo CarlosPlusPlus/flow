@@ -11,6 +11,19 @@ body {
   padding: 150px 0
 }
 
+.slides-container li {
+    background: url(background3.1.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.slide-caption {
+	left: 100px;
+	max-width: 620px;
+}
+
 .service-box {
   text-align: center;
 
