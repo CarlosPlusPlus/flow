@@ -26,6 +26,7 @@ gem 'unicorn'
 ###############################
 
 gem 'figaro'
+gem 'font-awesome-rails'
 
 ###############################
 #            END              #
