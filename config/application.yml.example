@@ -1,0 +1,18 @@
+# Secret Token for Session Persistence
+SECRET_TOKEN:		"Your Secret Token"
+
+# Database Credentials
+DB_APADPTER:	postgresql
+ENCODING:			utf8
+MIN_MESSAGES:	warning
+POOL:					5
+TIMEOUT:			5000
+
+DEV_DB:				Dev_DB_Name
+TST_DB:				Tst_DB_Name
+PRD_DB:				Prd_DB_Name
+
+# Deployment Credentials
+APP_NAME:				"AppName"
+APP_REPO:				"GitHub Repo Address"
+APP_SERVER_IP:	"NNN.NNN.NNN.NNN"
