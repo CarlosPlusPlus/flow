@@ -7,7 +7,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-// * Require CSS for KendoUI
+// Include CSS for KendoUI
 
 @import "bootstrap";
 @import "font-awesome";
@@ -16,3 +16,7 @@
 @import "slimbox2";
 @import "animate";
 @import "style";
+
+// Include Custom CSS
+
+@import "flow-custom"
