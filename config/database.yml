@@ -9,3 +9,7 @@ development: &default
 test:
   <<: *default
   database: 		<%= ENV['TST_DB'] %>
+
+production:
+  <<: *default
+  database: 		<%= ENV['PRD_DB'] %>
