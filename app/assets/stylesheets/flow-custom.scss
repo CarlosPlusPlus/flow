@@ -1,4 +1,19 @@
-// Custom styling.
+.start-saving {
+  float: left;
+}
+
+.learn-more {
+  margin-left: 20px;
+  background: rgba(65, 147, 191, 0.3);
+}
+
+.learn-more:hover {
+  background: rgba(65, 147, 191, 0.4);
+}
+
+.service-box {
+  text-align: center;
+}
 
 .main-logo {
   width: 100px !important;
@@ -20,26 +35,23 @@
   background-size: cover;
 }
 
-.start-saving {
-  float: left;
-}
-
-.learn-more {
-  margin-left: 20px;
-  background: rgba(65, 147, 191, 0.3);
-}
-
-.learn-more:hover {
-  background: rgba(65, 147, 191, 0.4);
+.ticker {
+  padding-top: 20px;
+  margin: -10px;
 }
 
 .referral-icon {
   font-size: 40px;
   padding: 0 20px;
   padding-top: 30px;
- }
+}
 
-.ticker {
-  padding-top: 20px;
-  margin: -10px;
- }
+// Mobile Web - Media Queries
+
+@media screen and (max-width: 410px) { 
+  .learn-more {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .desktop { display: none }
+}
