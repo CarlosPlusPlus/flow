@@ -2,6 +2,10 @@ body {
   font-size: 18px;
 }
 
+.process-space { 
+  padding: 150px 0
+}
+
 .start-saving {
   float: left;
 }
@@ -43,6 +47,31 @@ body {
   i {
     color: #4193BF;
   }
+}
+
+#clients {
+  background: url(clients.jpg);
+
+  h3 {
+    padding-bottom: 5px;
+    padding-top: 0;
+  }
+
+  ul li img {
+    height: auto;
+    margin: 0 auto;
+    width: 250px;
+  }
+}
+
+#cta-contact {
+  background: #FFF;
+  padding: 130px 0;
+ }
+
+footer {
+  padding-top: 0px;
+  padding-bottom: 30px;
 }
 
 // Mobile Web Media Queries
