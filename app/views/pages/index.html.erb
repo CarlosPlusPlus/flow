@@ -1,93 +1,10 @@
-<!-- CONTENT: Begin -->
-<div id="slides">
-  <ul class="slides-container">
-    <li>
-      <div class="hi desktop"></div>
-      <div class="slide-caption">
-        <h1 class="desktop">Save
-          <span class="txt-rotate" data-period="1500" data-rotate='[ "water.", "money.", "the planet."]'></span>
-        </h1>
+<!-- Introduction + Nav Bar -->
 
-        <div class="contrast">
-          <p>
-          	Flow is guaranteed to reduce your water bill and conserve the world's most valuable resource.
-          </p>
+<%= render 'pages/index/intro' %>
+<%= render 'shared/navbar' 		 %>
 
-          <p>
-            <a href="http://precisionflowusa.com" class="btn btn-lg btn-green start-saving">Start Saving Today</a>
-          </p>
-
-          <p>
-            <a href="" class="btn btn-lg btn-green learn-more">Learn More</a>
-          </p>
-        </div>
-      </div>
-  	</li>
-	</ul>
-
-  <nav class="slides-navigation">
-    <a href="#" class="next">
-      <i class="fa fa-angle-right"></i>
-    </a>
-    <a href="#" class="prev">
-      <i class="fa fa-angle-left"></i>
-    </a>
-  </nav>
-</div>
-<!-- CONTENT: End -->
-
-<!-- NAVIGATION: Begin -->
-<span id="our-product"></span>
-<div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky what-we-do">
-  <div id="nav">
-    <div class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand" href="">
-          	<%= image_tag 'Flow-logo1.png', :style => 'width:100px; margin-top: -5px;' %>
-          </a>
-        </div>
-
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav" id="top-nav">
-            <li class="active">
-              <a href="#slides">Home</a>
-            </li>
-
-            <li>
-              <a href="#our-product">Product</a>
-            </li>
-
-            <li>
-              <a href="#clients2">Partners</a>
-            </li>
-            <li>
-              <a href="#why">Why Flow</a>
-            </li>
-            <li>
-              <a href="#process">Process</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#clients">Refer a Friend</a>
-            </li>
-          </ul>
-          
-          <a href="contact.php" class="btn btn-green navbar-btn pull-right external">Start Saving Today</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- NAVIGATION: End -->
+<!-- Render Content Sections -->
+<%= render 'pages/index/why' 	 %>
 
 <!-- PRODUCT: Begin -->
 <section class="service space">
@@ -178,87 +95,7 @@
 <!-- CLIENTS: End -->
 
 <!-- WHY FLOW: Begin -->
-<span id="why"></span>
-<section class="service space-why">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9 text-left">
-        <h4 class="title-12">
-        	Why Flow
-        </h4>
 
-        <h1>Save
-          <b>
-       			<span class="f-green">water</span>
-          </b>, 
-          <b>
-       			<span class="f-green2">money</span>
-          </b>
-          , and
-          <b>
-       			<span class="f-brown">the planet</span>
-          </b>
-        </h1>
-
-        <p class="intro">
-        	The average American household consumes about 127,400 gallons of water during a year, costing approximately $1,200 each year.
-        </p>
-
-        <%= image_tag 'ticker.png', :class => 'ticker' %>
-      </div>
-    </div>
-
-    <div class="row p-top-50">
-      <div class="col-md-4">
-        <div class="service-box">
-          <figure>
-          	<%= image_tag 'product1.jpg', :class => 'product-pics' %>
-          </figure>
-
-          <h3>
-          	<span class="f-green">Save Water</span>
-          </h3>
-
-          <p>
-          	Decrease your water consumption by over 25%, saving tens of thousands of gallons of water each year.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="service-box">
-          <figure>
-          	<%= image_tag 'product2.jpg', :class => 'product-pics' %>
-          </figure>
-
-          <h3>
-          	<span class="f-green2">Save Money</span>
-          </h3>
-
-          <p>
-          	Average savings of $300 per year. With water prices increasing this number will continue to grow every year.
-          </p>
-        </div>
-      </div>
-			
-			<div class="col-md-4">
-        <div class="service-box">
-          <figure>
-          	<%= image_tag 'product3.jpg', :class => 'product-pics' %>
-          </figure>
-
-          <h3>
-          	<span class="f-brown">Save The Planet</span>
-          </h3>
-
-          <p>
-          	In addition to saving water, we are donating 10% of all proceeds to a charity of your choice.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- WHY FLOW: End -->
 
 <!-- FEATURES: Begin -->
