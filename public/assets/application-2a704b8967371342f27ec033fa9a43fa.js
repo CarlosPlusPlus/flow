@@ -3898,10 +3898,13 @@ if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigato
          changeHash: true,
          filter: ':not(.external)'
          });
-
-         
-         			
-  
+$('#savings-btn').click(function () {
+    $('html,body').animate({
+        scrollTop: $("#purchase").offset().top
+    }, 2000, function(){
+    	$('.active').removeClass();
+    });
+});
 // clear inputs with starter values
 new function($) {
   $.fn.prefilledInput = function() {

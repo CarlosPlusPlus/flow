@@ -5659,36 +5659,15 @@ td.visible-print {
   td.hidden-print {
     display: none !important; } }
 /*!
- *  Font Awesome 4.0.1
- *  the iconic font designed for Bootstrap
- *  ------------------------------------------------------------------------------
- *  The full suite of pictographic icons, examples, and documentation can be
- *  found at http://fontawesome.io.  Stay up to date on Twitter at
- *  http://twitter.com/fontawesome.
- *
- *  License
- *  ------------------------------------------------------------------------------
- *  - The Font Awesome font is licensed under SIL OFL 1.1 -
- *    http://scripts.sil.org/OFL
- *  - Font Awesome CSS, LESS, and SASS files are licensed under MIT License -
- *    http://opensource.org/licenses/mit-license.html
- *  - Font Awesome documentation licensed under CC BY 3.0 -
- *    http://creativecommons.org/licenses/by/3.0/
- *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
- *    "Font Awesome by Dave Gandy - http://fontawesome.io"
- *
- *  Author - Dave Gandy
- *  ------------------------------------------------------------------------------
- *  Email: dave@fontawesome.io
- *  Twitter: http://twitter.com/davegandy
- *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("fontawesome-webfont.eot?v=4.0.1");
-  src: url("fontawesome-webfont.eot?#iefix&v=4.0.1") format("embedded-opentype"), url("fontawesome-webfont.woff?v=4.0.1") format("woff"), url("fontawesome-webfont.ttf?v=4.0.1") format("truetype"), url("fontawesome-webfont.svg?v=4.0.1#fontawesomeregular") format("svg");
+  src: url("/assets/fontawesome-webfont.eot");
+  src: url("/assets/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fontawesome-webfont.woff") format("woff"), url("/assets/fontawesome-webfont.ttf") format("truetype"), url("/assets/fontawesome-webfont.svg#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -6070,7 +6049,7 @@ td.visible-print {
 .fa-check-square-o:before {
   content: "\f046"; }
 
-.fa-move:before {
+.fa-arrows:before {
   content: "\f047"; }
 
 .fa-step-backward:before {
@@ -6155,10 +6134,10 @@ td.visible-print {
 .fa-share:before {
   content: "\f064"; }
 
-.fa-resize-full:before {
+.fa-expand:before {
   content: "\f065"; }
 
-.fa-resize-small:before {
+.fa-compress:before {
   content: "\f066"; }
 
 .fa-plus:before {
@@ -6225,10 +6204,10 @@ td.visible-print {
 .fa-folder-open:before {
   content: "\f07c"; }
 
-.fa-resize-vertical:before {
+.fa-arrows-v:before {
   content: "\f07d"; }
 
-.fa-resize-horizontal:before {
+.fa-arrows-h:before {
   content: "\f07e"; }
 
 .fa-bar-chart-o:before {
@@ -6373,10 +6352,11 @@ td.visible-print {
 .fa-briefcase:before {
   content: "\f0b1"; }
 
-.fa-fullscreen:before {
+.fa-arrows-alt:before {
   content: "\f0b2"; }
 
-.fa-group:before {
+.fa-group:before,
+.fa-users:before {
   content: "\f0c0"; }
 
 .fa-chain:before,
@@ -6407,7 +6387,7 @@ td.visible-print {
 .fa-square:before {
   content: "\f0c8"; }
 
-.fa-reorder:before {
+.fa-bars:before {
   content: "\f0c9"; }
 
 .fa-list-ul:before {
@@ -6544,10 +6524,10 @@ td.visible-print {
 .fa-file-text-o:before {
   content: "\f0f6"; }
 
-.fa-building:before {
+.fa-building-o:before {
   content: "\f0f7"; }
 
-.fa-hospital:before {
+.fa-hospital-o:before {
   content: "\f0f8"; }
 
 .fa-ambulance:before {
@@ -6632,12 +6612,6 @@ td.visible-print {
 
 .fa-folder-open-o:before {
   content: "\f115"; }
-
-.fa-expand-o:before {
-  content: "\f116"; }
-
-.fa-collapse-o:before {
-  content: "\f117"; }
 
 .fa-smile-o:before {
   content: "\f118"; }
@@ -6753,16 +6727,16 @@ td.visible-print {
 .fa-anchor:before {
   content: "\f13d"; }
 
-.fa-unlock-o:before {
+.fa-unlock-alt:before {
   content: "\f13e"; }
 
 .fa-bullseye:before {
   content: "\f140"; }
 
-.fa-ellipsis-horizontal:before {
+.fa-ellipsis-h:before {
   content: "\f141"; }
 
-.fa-ellipsis-vertical:before {
+.fa-ellipsis-v:before {
   content: "\f142"; }
 
 .fa-rss-square:before {
@@ -7013,6 +6987,9 @@ td.visible-print {
 .fa-turkish-lira:before,
 .fa-try:before {
   content: "\f195"; }
+
+.fa-plus-square-o:before {
+  content: "\f196"; }
 
 .et-wrapper {
   position: relative;
@@ -13025,22 +13002,22 @@ p.meta a {
   -o-background-size: cover;
   background-size: cover; }
 
-#clients2 {
+#partners {
   background: #4397C4; }
 
-#clients2 {
+#partners {
   background: url("/assets/background6.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-#clients ul li img, #clients2 ul li img {
+#clients ul li img, #partners ul li img {
   height: auto;
   margin: 0 auto;
   width: 250px; }
 
-#clients h3, #clients2 h3 {
+#clients h3, #partners h3 {
   padding-bottom: 5px;
   padding-top: 0; }
 
@@ -13454,6 +13431,9 @@ ul.socials {
   font-size: 18px;
   line-height: 27px; }
 
+section#about, section#product {
+  border-top: 5px solid black; }
+
 .start-saving {
   float: left; }
 
@@ -13493,6 +13473,17 @@ ul.socials {
   font-size: 40px;
   padding: 0 20px;
   padding-top: 30px; }
+
+#purchase {
+  background: url("/assets/clients.jpg") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 35px auto; }
+
+#purchase i {
+  font-size: 25px; }
 
 @media screen and (max-width: 410px) {
   .learn-more {
