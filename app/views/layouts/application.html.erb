@@ -14,7 +14,14 @@
 
 	<body class="<%= body_class %>">
 	  <%= render 'flashes' -%>
-	  <%= yield %>
+	  
+	  <% if current_page?(root_url) %>
+	  	<%= yield %>
+	  <% else %>
+	  	<%= render 'shared/navbar' %>
+	  	<%= yield %>
+	  <% end %>
+
 	  <%= render 'javascript' %>
 
 	  <%= render 'shared/footer' %>
