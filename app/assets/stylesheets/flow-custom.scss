@@ -46,6 +46,14 @@
   padding-top: 30px;
 }
 
+#purchase {
+    background: url(asset-path('clients.jpg', image)) center center fixed;
+    -webkit-background-size: cover; -moz-background-size:cover;
+    -o-background-size: cover; background-size:cover;
+    padding: 35px auto;
+}
+#purchase i { font-size: 25px }
+
 // Mobile Web - Media Queries
 
 @media screen and (max-width: 410px) { 
