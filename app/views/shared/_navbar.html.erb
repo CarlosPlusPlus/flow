@@ -10,15 +10,22 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="">
+            <a class="navbar-brand" href="<%= root_path %>">
             	<%= image_tag 'Flow-logo1.png', :style => 'width:100px; margin-top: -5px;' %>
             </a>
           </div>
 
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav" id="top-nav">
+
+              <% unless homepage? %>
+                <li>
+                  <a href="#slides">Home</a>
+                </li>
+              <% end %>
+
               <li class="active">
-                <a href="#slides">Home</a>
+                <a href="#why">Why Flow</a>
               </li>
 
               <li>
@@ -28,9 +35,7 @@
               <li>
                 <a href="#clients2">Partners</a>
               </li>
-              <li>
-                <a href="#why">Why Flow</a>
-              </li>
+              
               <li>
                 <a href="#process">Process</a>
               </li>

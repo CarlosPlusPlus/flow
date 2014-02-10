@@ -15,7 +15,7 @@
 	<body class="<%= body_class %>">
 	  <%= render 'flashes' -%>
 	  
-	  <% if current_page?(root_url) %>
+	  <% if homepage? %>
 	  	<%= yield %>
 	  <% else %>
 	  	<%= render 'shared/navbar' %>
