@@ -111,7 +111,3 @@
          changeHash: true,
          filter: ':not(.external)'
          });
-
-         
-         			
-  
