@@ -3,11 +3,15 @@
 	  <div class="btm-footer col-md-12 text-center">
       <ul class="footer-links clearfix list-inline list-unstyled">
           <li>
-              <%= link_to 'Privacy', page_path('privacy') %>
+              <a href="#" id="privacy-link">Privacy</a>
+              <%= render 'shared/privacy' %>
           </li>
+
           <li>
-              <%= link_to 'Terms of Service', page_path('terms') %>
+              <a href="#" id="terms-link">Terms of Service</a>
+              <%= render 'shared/terms' %>
           </li>
+          
           <li>
               <a href="mailto:gwaxman@precisionflowusa.com">Contact</a>
           </li>
