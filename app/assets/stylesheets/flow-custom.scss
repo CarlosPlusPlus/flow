@@ -2,6 +2,20 @@ section#about, section#product {
   border-top: 5px solid black;
 }
 
+.popup {
+  display: none;
+  font-style: justify;
+  overflow: scroll;
+
+  background: white;
+  color: black;
+
+  border-radius: 15px;
+  max-height: 500px;
+  max-width:  500px;
+  padding:20px;
+}
+
 .start-saving {
   float: left;
 }
