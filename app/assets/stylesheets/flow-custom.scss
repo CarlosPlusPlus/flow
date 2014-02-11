@@ -2,18 +2,43 @@ section#about, section#product {
   border-top: 5px solid black;
 }
 
+.justify {
+  text-align: justify;
+  direction: ltr;
+}
+
 .popup {
   display: none;
-  font-style: justify;
   overflow: scroll;
+  text-align: none;
 
   background: white;
   color: black;
 
+  font-size: 16px;
+
   border-radius: 15px;
-  max-height: 500px;
-  max-width:  500px;
-  padding:20px;
+  max-height: 650px;
+  max-width: 500px;
+  padding: 25px;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.b-close{
+  border-radius: 7px;
+  font: bold 131% sans-serif;
+  padding: 0 6px 2px;
+  background-color: #2b91af;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .start-saving {
