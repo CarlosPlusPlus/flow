@@ -24,4 +24,5 @@
 //= require jquery.easing.1.3
 //= require slimbox2
 //= require custom
+//= require jquery.bpopup.min
 //= require_tree .
