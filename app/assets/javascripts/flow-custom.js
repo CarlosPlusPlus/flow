@@ -15,9 +15,7 @@ function initModal(link_id, popup_id){
 
     // Triggering bPopup when click event is fired
     $(popup_id).bPopup({
-	    easing: 'easeOutBack',
-      speed: 1000,
-      transition: 'slideUp'
+	    positionStyle: 'fixed'
   	});
 	});
 }
