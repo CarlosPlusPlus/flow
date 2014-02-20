@@ -1,44 +1,23 @@
-section#about, section#product {
-  border-top: 5px solid black;
-}
+// *******************
+// * General Styling *
+// *******************
 
 .justify {
   text-align: justify;
   direction: ltr;
 }
 
-.popup {
-  display: none;
-  overflow: scroll;
-  text-align: none;
-
-  background: white;
-  color: black;
-
-  font-size: 16px;
-  border-radius: 15px;
-  padding:       25px;
-
-  max-height:    625px;
-  max-width:     525px;
-
-  h1 {
-    text-align: center;
-  }
+.title-12 {
+  font-size: 40px;
+  font-weight: bolder;
 }
 
-.b-close{
-  border-radius: 7px;
-  font: bold 131% sans-serif;
-  padding: 0 6px 2px;
-  background-color: #2b91af;
-  color: #fff;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
+// ********************
+// * Section Specific *
+// ********************
+
+section#about, section#product {
+  border-top: 5px solid black;
 }
 
 .start-saving {
@@ -97,7 +76,47 @@ section#about, section#product {
 }
 #purchase i { font-size: 25px }
 
-// Mobile Web - Media Queries
+// ***************************
+// * Popup - Privacy & Terms *
+// ***************************
+
+.popup {
+  display: none;
+  overflow: scroll;
+  text-align: none;
+
+  background: white;
+  color: black;
+
+  font-size: 16px;
+  border-radius: 15px;
+  padding:       25px;
+
+  max-height:    625px;
+  max-width:     525px;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.b-close{
+  border-radius: 7px;
+  font: bold 131% sans-serif;
+  padding: 0 6px 2px;
+  background-color: #2b91af;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+// **************
+// * Mobile Web *
+// **************
 
 @media screen and (max-width: 410px) { 
   .learn-more {
