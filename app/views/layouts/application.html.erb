@@ -18,6 +18,7 @@
 	  <% if homepage? %>
 	  	<%= yield %>
 	  <% else %>
+	  	<!-- Different Nav Bar for static pages. -->
 	  	<%= render 'shared/navbar' %>
 	  	<%= yield %>
 	  <% end %>
