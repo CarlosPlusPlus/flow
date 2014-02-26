@@ -37,7 +37,15 @@ h4 {
 
 section#product {
   background: url(asset-path('light-background-1.png', image)) center center;
+  background-size: cover;
+  color: #fff;
 }
+
+section#product .f-white {
+  color: white;
+}
+
+
 
 .start-saving {
   float: left;
@@ -76,7 +84,6 @@ section#product {
 }
 
 .divider1 {
-  width: 1200px;
   height: 400px;
   background: url(asset-path('divider1.png', image)) center center;
   -webkit-background-size: cover;
