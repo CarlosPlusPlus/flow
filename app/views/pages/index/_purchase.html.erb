@@ -5,11 +5,14 @@
         <p class="lead">
           <i>Lets work together and create something awesome.</i>
         </p>
-        <p>
-          <a href="#" class="btn btn-lg btn-green">
-            PayPal Purchase
-          </a>
-        </p>
+        
+
+
+        <%= form_tag('/iframe', remote: true) do %>
+          <%= submit_tag "Submit Information" %>
+        <% end %>
+
+
       </div>
     </div>
   </div>
