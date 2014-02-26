@@ -35,8 +35,8 @@ h4 {
 // * Section Specific *
 // ********************
 
-section#about, section#product {
-  border-top: 5px solid black;
+section#product {
+  background: url(asset-path('light-background-1.png', image)) center center;
 }
 
 .start-saving {
