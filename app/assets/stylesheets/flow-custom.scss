@@ -3,21 +3,17 @@
 // *******************
 
 body {
-  font-weight: bolder;
+  // font-weight: bolder;
 }
 
 .justify {
-  text-align: justify;
+  // text-align: justify;
   direction: ltr;
 }
 
 .title-12 {
-  font-size: 50px;
-  font-weight: bolder;
-
-  text-align: center;
-  text-transform: none;
-  font-variant: small-caps;
+  text-align: left;
+  font-size: 14px;
 }
 
 .f-black {
@@ -36,8 +32,7 @@ section#about, section#product {
   float: left;
 }
 
-.learn-more {
-  margin-left: 20px;
+.learn-more { 
   background: rgba(65, 147, 191, 0.3);
 }
 
