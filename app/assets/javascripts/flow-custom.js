@@ -1,19 +1,19 @@
 // Add scroll effect:
 //   Learn More button on intro page.
 $('#learn-btn').click(function () {
-    $('html,body').animate({
-        scrollTop: $("#why").offset().top
-    }, 1000);
+  $('html,body').animate({
+    scrollTop: $("#why").offset().top
+  }, 1000);
 });
 
 // Add scroll effect:
 //   Savings button on nav bar.
 $('#savings-btn').click(function () {
-    $('html,body').animate({
-        scrollTop: $("#purchase").offset().top
-    }, 2000, function(){
-    	$('.active').removeClass();
-    });
+  $('html,body').animate({
+    scrollTop: $("#purchase").offset().top
+  }, 2000, function(){
+  	$('.active').removeClass();
+  });
 });
 
 // Create function for binding JS modals.
@@ -24,7 +24,7 @@ function initModal(link_id, popup_id){
 
     // Triggering bPopup when click event is fired
     $(popup_id).bPopup({
-	    positionStyle: 'fixed'
+      positionStyle: 'fixed'
   	});
 	});
 }
