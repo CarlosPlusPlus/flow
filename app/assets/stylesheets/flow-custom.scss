@@ -75,6 +75,16 @@ section#about, section#product {
   background-size: cover;
 }
 
+.divider1 {
+  width: 1200px;
+  height: 400px;
+  background: url(asset-path('divider1.png', image)) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .ticker {
   padding-top: 20px;
   margin: -10px;
