@@ -26,15 +26,15 @@ module Paypal
       'CREATESECURETOKEN' => 'Y',
       'TRXTYPE'           => 'S',
       'CURRENCY'          => 'USD',
-      'BILLTOFIRSTNAME'   => params[:customer][:first_name],
-      'BILLTOLASTNAME'    => params[:customer][:last_name],
+      'BILLTOFIRSTNAME'   => params[:customer][:fname],
+      'BILLTOLASTNAME'    => params[:customer][:lname],
       'BILLTOSTREET'      => params[:billing][:street],
       'BILLTOCITY'        => params[:billing][:city],
       'BILLTOSTATE'       => params[:billing][:state],
       'BILLTOZIP'         => params[:billing][:zip],
       'BILLTOCOUNTRY'     => 'US',
-      'SHIPTOFIRSTNAME'   => params[:customer][:first_name],
-      'SHIPTOLASTNAME'    => params[:customer][:last_name],
+      'SHIPTOFIRSTNAME'   => params[:customer][:fname],
+      'SHIPTOLASTNAME'    => params[:customer][:lname],
       'SHIPTOSTREET'      => params[:shipping][:street],
       'SHIPTOCITY'        => params[:shipping][:city],
       'SHIPTOSTATE'       => params[:shipping][:state],
@@ -52,6 +52,6 @@ module Paypal
   end
 
   def generate_iframe_string(paypal_response)
-    "<iframe src='https://payflowlink.paypal.com?SECURETOKEN=#{paypal_response['SECURETOKEN']}&SECURETOKENID=#{paypal_response['SECURETOKENID']}&MODE=#{ENV['PAYPAL_MODE']}' width='490' height='565' border='0' frameborder='0' scrolling='no' allowtransparency='true'></iframe>"
+    "<iframe src='https://payflowlink.paypal.com?SECURETOKEN=#{paypal_response['SECURETOKEN']}&SECURETOKENID=#{paypal_response['SECURETOKENID']}&MODE=#{ENV['PAYPAL_MODE']}' width='500' height='600' border='0' frameborder='0' scrolling='no' allowtransparency='true'></iframe>"
   end
 end
