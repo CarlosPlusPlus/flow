@@ -1,10 +1,10 @@
 module Paypal
   extend self
   
-  def generate_iframe(params)
-    secure_token  = generate_secure_token_id
-    paypal_params = generate_paypal_params(params, secure_token)
-    # CURL to get response
+  def generate_iframe (params)
+    secure_token    = generate_secure_token_id
+    paypal_params   = generate_paypal_params(params, secure_token)
+    paypal_response = generate_paypal_response(paypal_params)
     # Parse out response parameters
     # BUILD AND RETURN STRING
   end
@@ -15,7 +15,7 @@ module Paypal
     SecureRandom.uuid.gsub('-', '').slice(0, 25)
   end
 
-  def generate_paypal_params(params, secure_token)
+  def generate_paypal_params (params, secure_token)
     {
       'PARTNER' => ENV['PAYPAL_PARTNER'],
       'VENDOR'  => ENV['PAYPAL_VENDOR'],
@@ -44,5 +44,9 @@ module Paypal
       'ERRORURL'      => "#{params[:root_url]}/error",
       'RETURNURL'     => "#{params[:root_url]}/success"
     }.to_param
+  end
+
+  def generate_paypal_response (paypal_params)
+    %x[ curl "#{ENV['PAYPAL_ENDPOINT']}" -kd "#{paypal_params }" ]
   end
 end
