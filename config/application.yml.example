@@ -1,18 +1,25 @@
 # Secret Token for Session Persistence
-SECRET_KEY_BASE:		"Your Secret Token"
+SECRET_KEY_BASE:   "Your Secret Token"
 
 # Database Credentials
-DB_ADAPTER:		postgresql
-ENCODING:			utf8
-MIN_MESSAGES:	warning
-POOL:					5
-TIMEOUT:			5000
+DB_ADAPTER:   postgresql
+ENCODING:     utf8
+MIN_MESSAGES: warning
+POOL:         5
+TIMEOUT:      5000
 
-DEV_DB:				Dev_DB_Name
-TST_DB:				Tst_DB_Name
-PRD_DB:				Prd_DB_Name
+DEV_DB:       Dev_DB_Name
+TST_DB:       Tst_DB_Name
+PRD_DB:       Prd_DB_Name
 
 # Deployment Credentials
-APP_NAME:				AppName
-APP_REPO:				GitHub Repo Address
-APP_SERVER_IP:	NNN.NNN.NNN.NNN
+APP_NAME:       AppName
+APP_REPO:       GitHub Repo Address
+APP_SERVER_IP:  NNN.NNN.NNN.NNN
+
+# Paypal Credentials
+PAYPAL_ENDPOINT:  Test or Production Endpoint
+
+PAYPAL_PARTNER:   Paypal Partner
+PAYPAL_VENDOR:    Vendor Username
+PAYPAL_PASSWORD:  Vender Password
