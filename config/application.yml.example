@@ -23,3 +23,6 @@ PAYPAL_ENDPOINT:  Test or Production Endpoint
 PAYPAL_PARTNER:   Paypal Partner
 PAYPAL_VENDOR:    Vendor Username
 PAYPAL_PASSWORD:  Vender Password
+
+# Flow Specifics
+FLOW_COST: Cost of each Flow Unit
