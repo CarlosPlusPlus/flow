@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	  <meta charset="utf-8" />
-	  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-	  <meta name="ROBOTS" content="NOODP" />
-	  
-	  <title><%= page_title %></title>
-	  
-	  <%= stylesheet_link_tag :application, :media => 'all' %>
-	  <%= csrf_meta_tags %>
-	  <%= include_fonts %>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="ROBOTS" content="NOODP" />
+    
+    <title><%= page_title %></title>
+    
+    <%= stylesheet_link_tag :application, :media => 'all' %>
+    <%= csrf_meta_tags %>
+    <%= include_fonts %>
+  </head>
 
-	<body class="<%= body_class %>">
-	  <%= render 'flashes' -%>
-	  
-	  <% if homepage? %>
-	  	<%= yield %>
-	  <% else %>
-	  	<!-- Different Nav Bar for static pages. -->
-	  	<%= render 'shared/navbar' %>
-	  	<%= yield %>
-	  <% end %>
+  <body class="<%= body_class %>">
+    <%= render 'flashes' -%>
+    
+    <% if homepage? %>
+      <%= yield %>
+    <% else %>
+      <!-- Different Nav Bar for static pages. -->
+      <%= render 'shared/navbar' %>
+      <%= yield %>
+    <% end %>
 
-	  <%= render 'shared/footer' %>
-	  <%= render 'javascript' %>
-	</body>
+    <%= render 'shared/footer' %>
+    <%= render 'javascript' %>
+  </body>
 
 </html>

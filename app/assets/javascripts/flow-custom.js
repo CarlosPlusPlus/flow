@@ -15,19 +15,3 @@ $('#savings-btn').click(function () {
   	$('.active').removeClass();
   });
 });
-
-// Create function for binding JS modals.
-function initModal(link_id, popup_id){
-	$(link_id).bind('click', function(e) {
-    // Prevents the default action to be triggered. 
-    e.preventDefault();
-
-    // Triggering bPopup when click event is fired
-    $(popup_id).bPopup({
-      positionStyle: 'fixed'
-  	});
-	});
-}
-
-initModal('#privacy-l', '#privacy-p');
-initModal(  '#terms-l',   '#terms-p');
