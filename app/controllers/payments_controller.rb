@@ -5,7 +5,8 @@ class PaymentsController < ApplicationController
     @iframe_str = Paypal::generate_iframe({
       billing:  params[:billing],
       customer: params[:customer],
-      shipping: params[:shipping]
+      shipping: params[:shipping],
+      root_url: root_url
     })
 
     respond_to { |format| format.js }
