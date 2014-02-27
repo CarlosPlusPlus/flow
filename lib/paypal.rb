@@ -52,13 +52,6 @@ module Paypal
   end
 
   def generate_iframe_string(paypal_response)
-    iframe_string = <<-iframe_doc
-      <iframe src='#{ENV['PAYPAL_ENDPOINT']}?SECURETOKEN=#{paypal_response['SECURETOKEN']}&SECURETOKENID=#{paypal_response['SECURETOKENID']}
-        &width='490' height='565' border='0' frameborder='0' 
-        scrolling='no' allowtransparency='true'>
-      </iframe>
-    iframe_doc
-
-    iframe_string.squish
+    "<iframe src='https://payflowlink.paypal.com?SECURETOKEN=#{paypal_response['SECURETOKEN']}&SECURETOKENID=#{paypal_response['SECURETOKENID']}&MODE=#{ENV['PAYPAL_MODE']}' width='490' height='565' border='0' frameborder='0' scrolling='no' allowtransparency='true'></iframe>"
   end
 end
