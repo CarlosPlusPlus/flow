@@ -1,12 +1,12 @@
 module Paypal
   extend self
   
-  def generate_iframe (params)
-    secure_token    = generate_secure_token_id
-    paypal_params   = generate_paypal_params(params, secure_token)
+  def authenticate_iframe (params)
+    secure_token_id = generate_secure_token_id
+    paypal_params   = generate_paypal_params(params, secure_token_id)
     paypal_response = generate_paypal_response(paypal_params)
-    # Parse out response parameters
-    # BUILD AND RETURN STRING
+
+    generate_iframe_string(paypal_response)
   end
 
   private
@@ -15,14 +15,14 @@ module Paypal
     SecureRandom.uuid.gsub('-', '').slice(0, 25)
   end
 
-  def generate_paypal_params (params, secure_token)
+  def generate_paypal_params (params, secure_token_id)
     {
       'PARTNER' => ENV['PAYPAL_PARTNER'],
       'VENDOR'  => ENV['PAYPAL_VENDOR'],
       'USER'    => ENV['PAYPAL_VENDOR'],
       'PWD'     => ENV['PAYPAL_PASSWORD'],
       'AMT'     => ENV['FLOW_COST'],
-      'SECURETOKENID'     => secure_token,
+      'SECURETOKENID'     => secure_token_id,
       'CREATESECURETOKEN' => 'Y',
       'TRXTYPE'           => 'S',
       'CURRENCY'          => 'USD',
@@ -47,6 +47,18 @@ module Paypal
   end
 
   def generate_paypal_response (paypal_params)
-    %x[ curl "#{ENV['PAYPAL_ENDPOINT']}" -kd "#{paypal_params }" ]
+    response = %x[ curl "#{ENV['PAYPAL_ENDPOINT']}" -kd "#{paypal_params }" ]
+    Rack::Utils.parse_query(response)
+  end
+
+  def generate_iframe_string(paypal_response)
+    iframe_string = <<-iframe_doc
+      <iframe src='#{ENV['PAYPAL_ENDPOINT']}?SECURETOKEN=#{paypal_response['SECURETOKEN']}&SECURETOKENID=#{paypal_response['SECURETOKENID']}
+        &width='490' height='565' border='0' frameborder='0' 
+        scrolling='no' allowtransparency='true'>
+      </iframe>
+    iframe_doc
+
+    iframe_string.squish
   end
 end
