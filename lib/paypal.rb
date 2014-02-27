@@ -1,7 +1,7 @@
 module Paypal
   extend self
 
-  def generate_iframe
+  def generate_iframe(shipping, payment)
     # Generate Secure Token
     # Parse Address Parameters
     # CURL to get response
@@ -12,6 +12,8 @@ module Paypal
 
   private
 
-  # Additional functions will go here.
-  
+  def generate_secure_token_id
+    SecureRandom.uuid.gsub('-', '').slice(0, 25)
+  end
+
 end
