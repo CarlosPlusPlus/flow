@@ -1,7 +1,7 @@
 module Paypal
   extend self
   
-  def authenticate_iframe (params)
+  def authenticate_iframe(params)
     secure_token_id = generate_secure_token_id
     paypal_params   = generate_paypal_params(params, secure_token_id)
     paypal_response = generate_paypal_response(paypal_params)
@@ -15,7 +15,7 @@ module Paypal
     SecureRandom.uuid.gsub('-', '').slice(0, 25)
   end
 
-  def generate_paypal_params (params, secure_token_id)
+  def generate_paypal_params(params, secure_token_id)
     {
       'PARTNER' => ENV['PAYPAL_PARTNER'],
       'VENDOR'  => ENV['PAYPAL_VENDOR'],
@@ -46,8 +46,8 @@ module Paypal
     }.to_param
   end
 
-  def generate_paypal_response (paypal_params)
-    response = %x[ curl "#{ENV['PAYPAL_ENDPOINT']}" -kd "#{paypal_params }" ]
+  def generate_paypal_response(paypal_params)
+    response = %x[ curl "#{ENV['PAYPAL_ENDPOINT']}" -kd "#{paypal_params}" ]
     Rack::Utils.parse_query(response)
   end
 
