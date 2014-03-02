@@ -1,28 +1,13 @@
 <%= form_tag do %>
+  <h3>Average Monthly Water Bill</h3>
 
-  <h3>Customer Information</h3>
-  <input name="customer[fname]" placeholder="First Name" required />
-  <input name="customer[lname]" placeholder="Last Name" required />
-  <input name="customer[email]" placeholder="Email" required />
-
-  <br>
-
-  <h3>Installation Address</h3>
-  <input name="shipping[street]" placeholder="Street Name" required />
-  <input name="shipping[city]" placeholder="City" required />
-  <input name="shipping[state]" placeholder="State" required />
-  <input name="shipping[zip]" placeholder="Zip Code" required />
-
-  <br>
-
-  Same as Billing Address?
-  <input type="checkbox" name="sameAs" value="true" /><br/>
-
-  <h3>Billing Address</h3>
-  <input name="billing[street]" placeholder="Street Name"  required />
-  <input name="billing[city]" placeholder="City" required />
-  <input name="billing[state]" placeholder="State" required />
-  <input name="billing[zip]" placeholder="Zip Code" required />
+  <%= radio_button_tag 'bill', '50', true %>  $50
+  <%= radio_button_tag 'bill', '75'       %>  $75
+  <%= radio_button_tag 'bill', '100'      %> $100
+  <%= radio_button_tag 'bill', '150'      %> $150
+  <%= radio_button_tag 'bill', '200'      %> $200
+  <%= radio_button_tag 'bill', '250'      %> $250
+  <%= radio_button_tag 'bill', '500'      %> $500
 
   <br><br>
 
