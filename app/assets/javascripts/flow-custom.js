@@ -42,5 +42,4 @@ $('document').ready(function(){
   };
 
   setInterval(function() { flowCounter() }, 1000);
-
 });
