@@ -4,7 +4,7 @@ module Paypal
   def authenticate_iframe(params)
     secure_token_id = generate_secure_token_id
     paypal_params   = generate_paypal_params(params, secure_token_id)
-    paypal_response = generate_paypal_response(paypal_params)
+    paypal_response = generate_paypal_response(CGI.unescape(paypal_params))
 
     generate_iframe_string(paypal_response)
   end
@@ -33,6 +33,7 @@ module Paypal
       'BILLTOSTATE'       => params[:billing][:state],
       'BILLTOZIP'         => params[:billing][:zip],
       'BILLTOCOUNTRY'     => 'US',
+      'BILLTOPHONENUM'    => params[:customer][:phone],
       'SHIPTOFIRSTNAME'   => params[:customer][:fname],
       'SHIPTOLASTNAME'    => params[:customer][:lname],
       'SHIPTOSTREET'      => params[:shipping][:street],
@@ -40,7 +41,10 @@ module Paypal
       'SHIPTOSTATE'       => params[:shipping][:state],
       'SHIPTOZIP'         => params[:shipping][:zip],
       'SHIPTOCOUNTRY'     => 'US',
-      'EMAILCUSTOMER' => 'TRUE',
+      'BILLTOEMAIL'       => params[:customer][:email],
+      'SHIPTOEMAIL'       => params[:customer][:email],
+      'EMAILCUSTOMER'     => 'TRUE',
+      'COMMENT1'      => params[:giftcard],
       'ERRORURL'      => "#{params[:root_url]}/error",
       'RETURNURL'     => "#{params[:root_url]}/success"
     }.to_param

@@ -3,15 +3,16 @@
   <h3>Customer Information</h3>
   <input name="customer[fname]" placeholder="First Name" required />
   <input name="customer[lname]" placeholder="Last Name" required />
-  <input name="customer[email]" placeholder="Email" required />
+  <input name="customer[email]" type="email" placeholder="name@gmail.com" required />
+  <input name="customer[phone]" placeholder="XXX-XXX-XXXX" required />
 
   <br>
 
   <h3>Billing Address</h3>
-  <input name="shipping[street]" placeholder="Street Name" required />
-  <input name="shipping[city]" placeholder="City" required />
-  <input name="shipping[state]" placeholder="State" required />
-  <input name="shipping[zip]" placeholder="Zip Code" required />
+  <input name="billing[street]" placeholder="Street Name" required />
+  <input name="billing[city]" placeholder="City" required />
+  <%= render 'forms/state_picker', locals: {name: 'billing[state]'} %>
+  <input name="billing[zip]" placeholder="Zip Code" required />
 
   <h3>Installation Address</h3>
   
@@ -19,10 +20,18 @@
   <input type="checkbox" name="sameAs" value="true" />
 
   <br>
-  <input name="billing[street]" placeholder="Street Name"  required />
-  <input name="billing[city]" placeholder="City" required />
-  <input name="billing[state]" placeholder="State" required />
-  <input name="billing[zip]" placeholder="Zip Code" required />
+  <input name="shipping[street]" placeholder="Street Name"  required />
+  <input name="shipping[city]" placeholder="City" required />
+  <%= render 'forms/state_picker', locals: {name: 'shipping[state]'} %>
+  <input name="shipping[zip]" placeholder="Zip Code" required />
+
+  <br>
+
+  <h3>Gift Card</h3>
+
+  <%= radio_button_tag 'giftcard', 'Costco', true %> Costco
+  <%= radio_button_tag 'giftcard', 'Visa'         %> Visa
+  <%= radio_button_tag 'giftcard', 'Whole Foods'  %> Whole Foods
 
   <br><br>
 

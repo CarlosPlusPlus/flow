@@ -41,5 +41,8 @@ $('document').ready(function(){
     document.getElementById("dollars-saved").innerHTML = '$' + Math.round((c * money_per_day * days)).toLocaleString(0);
   };
 
-  setInterval(function() { flowCounter() }, 1000);
+  if ($('#gallons-saved').length){
+    setInterval(function() { flowCounter() }, 1000);
+  }
+
 });
