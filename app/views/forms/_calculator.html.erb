@@ -1,18 +1,44 @@
-<%= form_tag do %>
-  <h1 class="text-center">Savings Calculator</h1>
+<div class="row">
+  <%= form_tag do %>
+    <h1 class="text-center">Savings Calculator</h1>
 
-  <h3>Average Monthly Water / Savings Bill</h3>
+    <h3>Average Monthly Water / Savings Bill</h3>
 
-  <%= radio_button_tag 'bill', '50', true %>  $50
-  <%= radio_button_tag 'bill', '75'       %>  $75
-  <%= radio_button_tag 'bill', '100'      %> $100
-  <%= radio_button_tag 'bill', '150'      %> $150
-  <%= radio_button_tag 'bill', '200'      %> $200
-  <%= radio_button_tag 'bill', '250'      %> $250
-  <%= radio_button_tag 'bill', '500'      %> $500
+    <%= radio_button_tag 'bill', '50', true %>  $50
+    <%= radio_button_tag 'bill', '75'       %>  $75
+    <%= radio_button_tag 'bill', '100'      %> $100
+    <%= radio_button_tag 'bill', '150'      %> $150
+    <%= radio_button_tag 'bill', '200'      %> $200
+    <%= radio_button_tag 'bill', '250'      %> $250
+    <%= radio_button_tag 'bill', '500'      %> $500
 
-  <br><br>
+    <br><br>
 
-  <input type="submit" name="submit" value="Calculate"/>
+    <input type="submit" name="submit" value="Calculate" id="calc-btn"/>
 
-<% end %>
+  <% end %>
+</div>
+
+<br>
+
+<div class="row text-left">
+  <div class="col-md-9 col-md-offset-1">
+    <p>Average Annual Cost   </p>
+    <p>Average Annual Savings</p>
+    <p>Cost of Flow ($499.99 - $50 Gift Card)</p>
+  </div>
+
+  <div class="col-md-2 text-center">
+    <p id="calc-cost">$600.00</p>
+    <p id="calc-save">$150.00</p>
+    <p>$449.99</p>
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col-md-offset-1">
+    <h3>
+      Paid for in <span id="calc-paid">36</span> months or less!
+    </h3>
+  </div>
+</div>

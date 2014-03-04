@@ -41,8 +41,24 @@ $('document').ready(function(){
     document.getElementById("dollars-saved").innerHTML = '$' + Math.round((c * money_per_day * days)).toLocaleString(0);
   };
 
+  // Only initialize counter if on the index page.
   if ($('#gallons-saved').length){
     setInterval(function() { flowCounter() }, 1000);
   }
 
+  // Calculator functionality.
+
+  $("#calc-btn").click(function() {
+    event.preventDefault();
+
+    var bill = $('input[name=bill]:radio:checked').val();
+
+    var cost = bill * 12; 
+    var save = cost * .25;
+    var paid = Math.ceil((450 / (bill * .25)));
+    
+    $("#calc-cost").text("$" + cost.toFixed(2));
+    $("#calc-save").text("$" + save.toFixed(2));
+    $("#calc-paid").text(paid);
+  });
 });
