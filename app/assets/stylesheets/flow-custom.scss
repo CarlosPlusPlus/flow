@@ -183,7 +183,6 @@ section#product .f-white {
 // **************
 
 @media screen and (max-width: 410px) { 
-  
   .learn-more {
     margin-left: 0px;
     margin-top: 20px;
@@ -194,7 +193,11 @@ section#product .f-white {
   #intro {
     height: 400px;
   }
-  
+
+  #stats {
+    padding-left: 0px;
+  }
+
   .slide-caption {
     left: 0;
     width: 90%;
