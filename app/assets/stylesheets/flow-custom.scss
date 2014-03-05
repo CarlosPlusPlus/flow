@@ -39,6 +39,26 @@ h4 {
 // * Section Specific *
 // ********************
 
+#intro {
+  height: 780px;
+
+  background: url(asset-path('background3.1.jpg', image)) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slide-caption {
+    left: 100px;
+    max-width: 800px;
+    padding: 10px 20px;
+    position: relative;
+    top: 25%;
+    width: 800px;
+    z-index: 3;
+}
+
 section {
   padding-top:   100px;
   padding-bottom: 50px;
@@ -163,9 +183,25 @@ section#product .f-white {
 // **************
 
 @media screen and (max-width: 410px) { 
+  
   .learn-more {
     margin-left: 0px;
     margin-top: 20px;
   }
+
   .desktop { display: none }
+
+  #intro {
+    height: 400px;
+  }
+  
+  .slide-caption {
+    left: 0;
+    width: 90%;
+    height: 50%;
+    padding: 10px 20px;
+    position: relative;
+    top: 5%;
+    z-index: 3;
+  }
 }
