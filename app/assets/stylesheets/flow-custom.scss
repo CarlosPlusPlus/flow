@@ -140,27 +140,14 @@ section#product .f-white {
   margin: 0;
 }
 
-// ***************************
-// * Popup - Privacy & Terms *
-// ***************************
+.question {
+  padding: 10px 0px;
 
-.popup {
-  display: none;
-  overflow: scroll;
-  text-align: none;
+  .faq-toggle {
+  }
 
-  background: white;
-  color: black;
-
-  font-size: 10px;
-  border-radius: 15px;
-  padding:       25px;
-
-  max-height:    625px;
-  max-width:     525px;
-
-  h1 {
-    text-align: center;
+  div.collapse, div.collapsing, div.in {
+    font-size: 50px;
   }
 }
 
@@ -173,6 +160,7 @@ section#product .f-white {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  margin-right: 20px;
 }
 
 // **************
