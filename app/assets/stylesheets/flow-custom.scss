@@ -70,6 +70,12 @@ section#product {
   color: #fff;
 }
 
+section#faqs {
+  background: url(asset-path('light-background-2.png', image)); 
+  background-size: cover;
+  color: #fff;
+}
+
 section#product .f-white {
   color: white;
 }
@@ -143,6 +149,7 @@ section#product .f-white {
 .question {
   padding: 10px 0px;
   font-weight: bolder;
+  font-size: 22px;
 
   .faq-toggle {
   }
