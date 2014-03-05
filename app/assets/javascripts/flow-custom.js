@@ -37,7 +37,6 @@ $('document').ready(function(){
   }
 
   // Calculator functionality.
-
   $("#calc-btn").click(function() {
     event.preventDefault();
 
@@ -51,4 +50,15 @@ $('document').ready(function(){
     $("#calc-save").text("$" + save.toFixed(2));
     $("#calc-paid").text(paid);
   });
+
+  // Checkbox functionality.
+  $("#installation-checkbox").change(function() {
+    if (this.checked) {
+      $('#shipping-address').hide();
+    }
+    else {
+      $('#shipping-address').show();
+    }
+  });
+
 });
