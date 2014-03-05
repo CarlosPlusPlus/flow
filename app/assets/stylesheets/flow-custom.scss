@@ -142,12 +142,17 @@ section#product .f-white {
 
 .question {
   padding: 10px 0px;
+  font-weight: bolder;
 
   .faq-toggle {
   }
 
   div.collapse, div.collapsing, div.in {
-    font-size: 50px;
+    color: black;
+  }
+
+  div.answer {
+    padding-top: 10px;
   }
 }
 
@@ -155,7 +160,7 @@ section#product .f-white {
   border-radius: 7px;
   font: bold 100% sans-serif;
   padding: 0 6px 2px;
-  background-color: #2b91af;
+  background-color: #4193BF;
   color: #fff;
   cursor: pointer;
   text-align: center;
