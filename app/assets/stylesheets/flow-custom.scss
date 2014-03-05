@@ -152,7 +152,7 @@ section#product .f-white {
   background: white;
   color: black;
 
-  font-size: 16px;
+  font-size: 10px;
   border-radius: 15px;
   padding:       25px;
 
@@ -166,16 +166,13 @@ section#product .f-white {
 
 .b-close{
   border-radius: 7px;
-  font: bold 131% sans-serif;
+  font: bold 100% sans-serif;
   padding: 0 6px 2px;
   background-color: #2b91af;
   color: #fff;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
 }
 
 // **************
