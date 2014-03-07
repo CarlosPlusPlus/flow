@@ -159,8 +159,12 @@ section#product .f-white {
   width:  125px;
 }
 
-.stats-info.list-unstyled.list-inline li {
-  margin: 0;
+ul.clients {
+  padding-top: 20px;
+}
+
+ul.clients li {
+  padding: 10px 10px;
 }
 
 #calc-btn {
