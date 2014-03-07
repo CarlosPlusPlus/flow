@@ -73,14 +73,22 @@ hr {
     border-radius: 2px;
     text-shadow: none;
 }
+
+.btn-blue {
+    background-color: #4193BF; /*Blue*/
+    color: #FFFFFF;
+}
+.btn-blue:hover {
+    background-color: #4397C4; /*Blue*/
+    color: #fff;
+}
+
 .btn-green {
     background-color: #95ce53; /*Green*/
-    background-color: #4193BF; /*Blue*/
     color: #FFFFFF;
 }
 .btn-green:hover {
     background-color: #78b432; /*Green*/
-    background-color: #4397C4; /*Blue*/
     color: #fff;
 }
 
