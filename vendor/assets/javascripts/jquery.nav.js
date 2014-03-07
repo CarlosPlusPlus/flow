@@ -165,7 +165,13 @@
 						top: -self.config.scrollOffset - 85
 					},
 					onAfter: function() {
+            //Add the auto-adjust on scroll back in
+            self.bindInterval();
 
+            //End callback
+            if(self.config.end) {
+              self.config.end();
+            }
 					}
 				});
 			}
