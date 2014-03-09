@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row p-top-50">
   <%= form_tag do %>
     <h2 class="text-center">Savings Calculator</h2>
 
@@ -41,7 +41,7 @@
     </div>
 
     <div class="row p-top-20">
-      <input type="submit" name="submit" value="Calculate" class="btn btn-green bolder" id="calc-btn"/>
+      <input type="submit" name="submit" value="Calculate Savings" class="btn btn-green bolder" id="calc-btn"/>
     </div>
 
   <% end %>
@@ -49,14 +49,14 @@
 
 <br>
 
-<div class="row text-left">
+<div class="row text-left" style="font-size: 16px;">
   <div class="col-md-6 col-md-offset-2">
     <p>Average Annual Cost         </p>
     <p>Annual Savings with Flow    </p>
-    <p>Cost of Flow - $50 Gift Card</p>
+    <p>Cost of Flow (Less $50 Gift Card)</p>
   </div>
 
-  <div class="col-md-2 text-center">
+  <div class="col-md-1 text-center">
     <p id="calc-cost" class="bolder f-blue">$600.00</p>
     <p id="calc-save" class="bolder f-green">$150.00</p>
     <p class="bolder f-brown">$449.99</p>
