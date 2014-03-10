@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.1.1'
 
 # Gems provided via Suspenders
 gem 'airbrake'
@@ -25,6 +25,7 @@ gem 'unicorn'
 # Gems added post-suspenders. #
 ###############################
 
+gem 'capistrano'
 gem 'figaro'
 gem 'font-awesome-rails'
 
