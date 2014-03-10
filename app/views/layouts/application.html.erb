@@ -20,11 +20,11 @@
       <%= yield %>
     <% else %>
       <!-- Different Nav Bar for static pages. -->
-      <%= render 'shared/navbar_alt' %>
+      <%= render 'shared/navbar_alt' unless confirmation? %>
       <%= yield %>
     <% end %>
 
-    <%= render 'shared/footer' %>
+    <%= render 'shared/footer' unless confirmation? %>
     <%= render 'javascript' %>
   </body>
 
