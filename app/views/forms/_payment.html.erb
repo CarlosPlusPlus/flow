@@ -1,0 +1,118 @@
+<%= form_tag('/iframe', remote: true) do %>
+  <div class="col-md-5 col-md-offset-1">
+    <div class="row">
+      <h3 class="text-center f-brown bolder">Customer Information</h3>
+      <div class="row bolder f-black p-top-10">
+        <div class="col-md-3">
+          First Name:
+        </div>
+
+        <div class="col-md-3">
+          <input name="customer[fname]" placeholder="John" required />
+        </div>
+      </div>
+
+      <div class="row bolder f-black p-top-10">
+        <div class="col-md-3">
+          Last Name:
+        </div>
+
+        <div class="col-md-3">
+          <input name="customer[lname]" placeholder="Smith" required />
+        </div>
+      </div>
+
+      <div class="row bolder f-black p-top-10">
+        <div class="col-md-3">
+          Email:
+        </div>
+
+        <div class="col-md-3">
+          <input name="customer[email]" placeholder="john.smith@gmail.com" required />
+        </div>
+      </div>
+
+      <div class="row bolder f-black p-top-10">
+        <div class="col-md-3">
+          Phone #:
+        </div>
+
+        <div class="col-md-3">
+          <input name="customer[phone]" placeholder="504-676-4841" required />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h3>Gift Card</h3>
+
+      <%= radio_button_tag 'giftcard', 'Visa', true  %> Visa
+      <%= radio_button_tag 'giftcard', 'Costco'      %> Costco
+      <%= radio_button_tag 'giftcard', 'Whole Foods' %> Whole Foods
+    </div>
+  </div>
+
+  <div class="col-md-5 col-md-offset-1">
+    <div class="row">
+      <h3 class="text-center f-blue bolder">Billing Address</h3>
+
+      <div class="row bolder f-black p-top-10">
+        <div class="col-md-3">
+          Street:
+        </div>
+
+        <div class="col-md-3">
+          <input name="billing[street]" required />
+        </div>
+      </div>
+
+      <div class="row bolder f-black p-top-10">
+        <div class="col-md-3">
+          City:
+        </div>
+
+        <div class="col-md-3">
+          <input name="billing[city]" required />
+        </div>
+      </div>
+
+      <div class="row bolder f-black p-top-10">
+        <div class="col-md-3">
+          State:
+        </div>
+
+        <div class="col-md-3">
+          <%= render 'forms/state_picker', locals: {name: 'billing[state]'} %>
+        </div>
+      </div>
+
+      <div class="row bolder f-black p-top-10">
+        <div class="col-md-3">
+          Zip Code:
+        </div>
+
+        <div class="col-md-3">
+          <input name="billing[zip]" required />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h3 class="text-center f-blue bolder">Installation Address</h3>
+    
+      <div class="text-center">
+        <p><strong>Same as Billing Address?</strong> <input type="checkbox" name="sameAs" id="installation-checkbox" style="margin-left: 20px;" checked/> </p>
+      </div>
+
+      <span id="shipping-address" style="display:none;">
+        <input name="shipping[street]" placeholder="Street Name"  />
+        <input name="shipping[city]" placeholder="City" />
+        <%= render 'forms/state_picker', locals: {name: 'shipping[state]'} %>
+        <input name="shipping[zip]" placeholder="Zip Code" />
+      </span>
+    </div>
+  </div>
+
+  <input type="submit" name="submit" value="Submit"/>
+
+<% end %>
