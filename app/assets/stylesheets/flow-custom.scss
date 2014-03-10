@@ -157,14 +157,13 @@ section#product .f-white {
   text-align: center;
 }
 
-#ansi {
-  height: 115px;
-  width:  165px;
-}
-
-#nsf {
+.about-logo {
   height: 125px;
   width:  125px;
+}
+
+#about-logos span {
+  padding: 10px 20px;
 }
 
 ul.clients {
