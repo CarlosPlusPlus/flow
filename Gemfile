@@ -28,6 +28,7 @@ gem 'unicorn'
 gem 'capistrano'
 gem 'figaro'
 gem 'font-awesome-rails'
+gem 'sprockets', '<= 2.11.0'
 
 ###############################
 #            END              #
