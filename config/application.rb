@@ -13,7 +13,7 @@ Bundler.require(:default, Rails.env)
 
 module Flow
   class Application < Rails::Application
-    config.active_record.default_timezone = :utc
+    # config.active_record.default_timezone = :utc
 
     config.generators do |generate|
       generate.helper false
