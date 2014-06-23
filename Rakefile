@@ -15,3 +15,9 @@ if defined?(RSpec)
 end
 task(:default).clear
 task :default => [:spec]
+
+namespace :db do
+  desc "Override ActiveRecord db:migrate task"
+  task :migrate => :environment do
+  end
+end
