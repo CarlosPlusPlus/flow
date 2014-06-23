@@ -1,15 +1,15 @@
 development: &default
-  adapter:  		<%= ENV['DB_ADAPTER'] %>
-  encoding: 		<%= ENV['ENCODING'] %>
+  adapter:      <%= ENV['DB_ADAPTER'] %>
+  encoding:     <%= ENV['ENCODING'] %>
   min_messages: <%= ENV['MIN_MESSAGES'] %>
-  pool: 				<%= ENV['POOL'] %>
-  timeout: 			<%= ENV['TIMEOUT'] %>
-  database: 		<%= ENV['DEV_DB'] %>
+  pool:         <%= ENV['POOL'] %>
+  timeout:      <%= ENV['TIMEOUT'] %>
+  database:     <%= ENV['DEV_DB'] %>
 
 test:
   <<: *default
-  database: 		<%= ENV['TST_DB'] %>
+  database:     <%= ENV['TST_DB'] %>
 
 production:
   <<: *default
-  database: 		<%= ENV['PRD_DB'] %>
+  database:     <%= ENV['PRD_DB'] %>
