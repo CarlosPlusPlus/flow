@@ -12,13 +12,12 @@ DEV_DB:       Dev_DB_Name
 TST_DB:       Tst_DB_Name
 PRD_DB:       Prd_DB_Name
 
-# Deployment Credentials
 APP_NAME:       AppName
 APP_REPO:       GitHub Repo Address
 APP_SERVER_IP:  NNN.NNN.NNN.NNN
-SERVER_IP:   107.170.32.115
-SERVER_USER: admin
-SERVER_PASS: Admin613
+SERVER_IP:      XXXXX
+SERVER_USER:    XXXXX
+SERVER_PASS:    XXXXX
 
 # Paypal Credentials
 PAYPAL_ENDPOINT:  Test or Production Endpoint

@@ -1,5 +1,5 @@
 development:
-  adapter:      <%= ENV['DB_ADAPTER'] %>
+  adapter:      postgresql
   encoding:     <%= ENV['ENCODING'] %>
   min_messages: <%= ENV['MIN_MESSAGES'] %>
   pool:         <%= ENV['POOL'] %>
@@ -7,7 +7,7 @@ development:
   database:     <%= ENV['DEV_DB'] %>
 
 test:
-  adapter:      <%= ENV['DB_ADAPTER'] %>
+  adapter:      postgresql
   encoding:     <%= ENV['ENCODING'] %>
   min_messages: <%= ENV['MIN_MESSAGES'] %>
   pool:         <%= ENV['POOL'] %>
@@ -15,7 +15,7 @@ test:
   database:     <%= ENV['TST_DB'] %>
 
 production:
-  adapter:      <%= ENV['DB_ADAPTER'] %>
+  adapter:      postgresql
   encoding:     <%= ENV['ENCODING'] %>
   min_messages: <%= ENV['MIN_MESSAGES'] %>
   pool:         <%= ENV['POOL'] %>
