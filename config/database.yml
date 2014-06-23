@@ -1,23 +1,23 @@
 development:
   adapter:      postgresql
+  database:     <%= ENV['DEV_DB'] %>
   encoding:     <%= ENV['ENCODING'] %>
   min_messages: <%= ENV['MIN_MESSAGES'] %>
   pool:         <%= ENV['POOL'] %>
   timeout:      <%= ENV['TIMEOUT'] %>
-  database:     <%= ENV['DEV_DB'] %>
 
 test:
   adapter:      postgresql
+  database:     <%= ENV['TST_DB'] %>
   encoding:     <%= ENV['ENCODING'] %>
   min_messages: <%= ENV['MIN_MESSAGES'] %>
   pool:         <%= ENV['POOL'] %>
   timeout:      <%= ENV['TIMEOUT'] %>
-  database:     <%= ENV['TST_DB'] %>
 
 production:
   adapter:      postgresql
+  database:     <%= ENV['PRD_DB'] %>
   encoding:     <%= ENV['ENCODING'] %>
   min_messages: <%= ENV['MIN_MESSAGES'] %>
   pool:         <%= ENV['POOL'] %>
   timeout:      <%= ENV['TIMEOUT'] %>
-  database:     <%= ENV['PRD_DB'] %>
