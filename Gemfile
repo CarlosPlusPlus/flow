@@ -25,7 +25,8 @@ gem 'unicorn'
 # Gems added post-suspenders. #
 ###############################
 
-gem 'capistrano'
+gem 'capistrano', '~> 3.1'
+gem 'capistrano-rails', '~> 1.1'
 gem 'figaro'
 gem 'font-awesome-rails'
 gem 'sprockets', '<= 2.11.0'
