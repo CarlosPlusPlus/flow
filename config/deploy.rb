@@ -39,6 +39,10 @@ set :keep_releases, 5
 
 namespace :deploy do
 
+  desc "No ActiveRecord Override!"
+  task :migrate do
+  end
+
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
