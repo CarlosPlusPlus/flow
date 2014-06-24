@@ -1,4 +1,4 @@
-require 'active_record/connection_adapters/postgresql_adapter'
+# require 'active_record/connection_adapters/postgresql_adapter'
 module ActiveRecord
   module ConnectionAdapters
     class PostgreSQLAdapter < AbstractAdapter
