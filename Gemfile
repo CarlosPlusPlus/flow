@@ -19,7 +19,7 @@ gem 'recipient_interceptor'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
-gem 'unicorn'
+# gem 'unicorn'
 
 ###############################
 # Gems added post-suspenders. #
