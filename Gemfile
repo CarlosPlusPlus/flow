@@ -12,14 +12,14 @@ gem 'flutie'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'neat'
-# gem 'pg'
+gem 'pg'
 gem 'rack-timeout'
 gem 'rails', '>= 4.0.0'
 gem 'recipient_interceptor'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
-# gem 'unicorn'
+gem 'unicorn'
 
 ###############################
 # Gems added post-suspenders. #
