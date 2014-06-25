@@ -154,7 +154,6 @@ GEM
     newrelic_rpm (3.7.3.204)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
-    pg (0.17.1)
     polyglot (0.3.4)
     posix-spawn (0.3.8)
     pry (0.9.12.6)
@@ -301,7 +300,6 @@ DEPENDENCIES
   launchy
   neat
   newrelic_rpm (>= 3.6.7)
-  pg
   rack-timeout
   rails (>= 4.0.0)
   rails_12factor
