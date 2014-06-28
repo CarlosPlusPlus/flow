@@ -65,7 +65,21 @@ $('document').ready(function(){
   $("#coupon-btn").click(function(e) {
     e.preventDefault();
 
-    alert("BUTTON IS CLICKED!");
+    var code = $("#coupon-input").val();
+      
+      $.ajax({
+        url: '/couponcode',
+        dataType: 'json',
+        type: 'POST',
+        data : { code: code },
+        
+        success: function(result) {  
+          console.log(result);
+          // If success: change value of <span> to value.
+        }
+      })
+
+
   });
 
 

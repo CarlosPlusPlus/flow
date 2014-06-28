@@ -1,3 +1,4 @@
 Flow::Application.routes.draw do
-  post 'iframe', to: 'payments#iframe'
+  post 'couponcode', to: 'payments#couponcode'
+  post 'iframe',     to: 'payments#iframe'
 end
