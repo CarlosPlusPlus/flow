@@ -54,11 +54,19 @@ $('document').ready(function(){
   // Checkbox functionality.
   $("#installation-checkbox").change(function() {
     if (this.checked) {
-      $('#shipping-address').hide();
+      $("#shipping-address").hide();
     }
     else {
-      $('#shipping-address').show();
+      $("#shipping-address").show();
     }
   });
+
+  // Coupon Code functionality.
+  $("#coupon-btn").click(function(e) {
+    e.preventDefault();
+
+    alert("BUTTON IS CLICKED!");
+  });
+
 
 });
