@@ -44,10 +44,9 @@ $('document').ready(function(){
 
     var cost = bill * 12; 
     var save = cost * .25;
-    var paid = Math.ceil((450 / (bill * .25)));
+    var paid = Math.ceil((600 / (bill * .25)));
     
     $("#calc-cost").text("$" + cost.toFixed(2));
-    $("#calc-save").text("$" + save.toFixed(2));
     $("#calc-paid").text(paid);
   });
 
