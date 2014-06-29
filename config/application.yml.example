@@ -27,4 +27,6 @@ PAYPAL_VENDOR:    Vendor Username
 PAYPAL_PASSWORD:  Vender Password
 
 # Flow Specifics
-FLOW_COST: Cost of each Flow Unit
+FLOW_COST:     Cost of each FLOW Unit
+FLOW_DISCOUNT: Discount Cost of each FLOW Unit
+FLOW_REGEX:    RegEx for Coupon Code
