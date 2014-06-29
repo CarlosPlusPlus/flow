@@ -21,7 +21,7 @@ module Paypal
       'VENDOR'  => ENV['PAYPAL_VENDOR'],
       'USER'    => ENV['PAYPAL_VENDOR'],
       'PWD'     => ENV['PAYPAL_PASSWORD'],
-      'AMT'     => ENV['FLOW_COST'],
+      'AMT'     => (params[:discount] ? ENV['FLOW_DISCOUNT'] : ENV['FLOW_COST']),
       'SECURETOKENID'     => secure_token_id,
       'CREATESECURETOKEN' => 'Y',
       'TRXTYPE'           => 'S',
@@ -44,10 +44,9 @@ module Paypal
       'BILLTOEMAIL'       => params[:customer][:email],
       'SHIPTOEMAIL'       => params[:customer][:email],
       'EMAILCUSTOMER'     => 'TRUE',
-      'COMMENT1'      => params[:giftcard],
       'ERRORURL'      => "#{params[:root_url]}/error",
       'RETURNURL'     => "#{params[:root_url]}/success"
-    }.to_param
+    }.merge(params[:discount] ? { 'COMMENT1' => params[:coupon_code] } : {}).to_param
   end
 
   def generate_paypal_response(paypal_params)

@@ -9,9 +9,11 @@ class PaymentsController < ApplicationController
 
   # JavaScript Post of Payment Info for iframe generation.
   def iframe
-    # TODO: @discount ? ENV['FLOW_DISCOUNT_PRICE'] || ENV['FLOW_PRICE']
-    # TODO: Comment1 => "" || getCouponCode
-    @iframe = Paypal::authenticate_iframe(params.merge(root_url: root_url))
+    @iframe = Paypal::authenticate_iframe(
+      params.merge(root_url:    root_url).
+             merge(coupon_code: session[:coupon_code]).
+             merge(discount:    session[:discount]))
+
     reset_coupon_variables
 
     respond_to { |format| format.js }
@@ -20,16 +22,18 @@ class PaymentsController < ApplicationController
   private
 
   def check_coupon_code
-    session[:coupon_code] = params['code'] || ""
+    reset_coupon_variables
+
+    session[:coupon_code] = params['code'] unless params['code'].empty?
     session[:discount]    = valid_code?(session[:coupon_code])
   end
 
   def reset_coupon_variables
-    session[:coupon_code] = ""
+    session[:coupon_code] = nil
     session[:discount]    = false
   end
 
   def valid_code?(coupon_code)
-    (coupon_code =~ /#{ENV['FLOW_REGEX']}/) ? true : false
+    (coupon_code =~ /#{ENV['FLOW_REGEX']}/) ? true : nil
   end
 end
