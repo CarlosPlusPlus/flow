@@ -1,9 +1,10 @@
 // Add comments prior to Paypal iframe section.
-$("#payflow-comments").html("TEST");
+var checkout_comment = "";
+$("#payflow-comments").html(checkout_comment);
 
 // Add iFrame to pre-selected div on checkout page.
 $("#payflow-iframe").html("<%= raw(@iframe) %>");
 
 // Scroll down to iframe once DOM has been updated.
 $('html,body').animate({
-  scrollTop: $("#payflow-iframe").offset().top - 275 }, 1000);
+  scrollTop: $("#payflow-iframe").offset().top - 250 }, 1000);

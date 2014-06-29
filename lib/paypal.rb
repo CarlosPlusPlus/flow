@@ -44,6 +44,7 @@ module Paypal
       'BILLTOEMAIL'       => params[:customer][:email],
       'SHIPTOEMAIL'       => params[:customer][:email],
       'EMAILCUSTOMER'     => 'TRUE',
+      'CANCELURL'     => "#{params[:root_url]}/checkout",
       'ERRORURL'      => "#{params[:root_url]}/error",
       'RETURNURL'     => "#{params[:root_url]}/success"
     }.merge(params[:discount] ? { 'COMMENT1' => params[:coupon_code] } : {}).to_param
