@@ -73,14 +73,25 @@ $('document').ready(function(){
         type: 'POST',
         data : { code: code },
         
-        success: function(result) {  
-          console.log(result);
-          // If success: change value of <span> to value.
+        success: function(result) {
+          if (result.discount == true) {
+            $("#coupon-status").addClass("f-green p-top-10").
+                text("Coupon Code has been successfully applied!");
+
+            $("#flow-cost").text("$" + result.price)
+            $("#flow-cost").animate({ backgroundColor: "green", color: "white"},1000);
+            $("#flow-cost").animate({ backgroundColor: "white", color: "black"},1000);
+          } else {
+            $("#coupon-input").val("").attr("placeholder", "Invalid Coupon Code");
+
+            $("#flow-cost").animate({ backgroundColor: "red", color: "white"},1000);
+            $("#flow-cost").animate({ backgroundColor: "white", color: "black"},1000);
+
+            setTimeout(function() {
+              $("#coupon-input").val("").attr("placeholder", "Enter Coupon Code");
+            }, 2000);
+          }
         }
       })
-
-
   });
-
-
 });

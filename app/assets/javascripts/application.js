@@ -25,4 +25,6 @@
 //= require slimbox2
 //= require custom
 //= require jquery.bpopup.min
+//= require jquery.color-2.1.2.min
+//= require jquery-ui.min
 //= require_tree .
