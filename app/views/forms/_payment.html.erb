@@ -49,15 +49,18 @@
 
         <div class="col-md-4 text-center">
           <div class="text-center p-top-10">
-            <p>
+            <p class="p-top-20">
               <span style="padding-right:10px;">MSRP: </span>
               <span class="bold" id="flow-cost">$<%= ENV['FLOW_COST'] %></span>
             </p>
           </div>
         </div>
 
-        <div class="col-md-8 text-center">
-          <input id="coupon-input" type="text" name="couponcode" placeholder="Enter Coupon Code">
+        <div class="col-md-8">
+          <div class="row p-left-50" style="color:black;font-size:12px;">
+            Enter Coupon Code in ALL CAPS
+          </div>
+          <input id="coupon-input" type="text" name="couponcode" placeholder="Coupon Code">
           <input id="coupon-btn"  class="btn btn-green" type="submit" value="Enter">
         </div>
       </div>
@@ -112,7 +115,7 @@
       </div>
 
       <div class="row">
-        <h3 class="text-center f-blue bolder">Installation Address</h3>
+        <h3 class="text-center f-blue bolder p-top-10">Installation Address</h3>
       
         <div class="text-center p-top-20">
           <p><strong>Same as Billing Address?</strong> <input type="checkbox" name="sameAs" id="installation-checkbox" style="margin-left: 20px;" checked/> </p>
