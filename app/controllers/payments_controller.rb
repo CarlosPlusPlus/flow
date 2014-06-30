@@ -27,8 +27,6 @@ class PaymentsController < ApplicationController
   private
 
   def check_coupon_code
-    reset_coupon_variables
-
     session[:coupon_code] = params['code'] unless params['code'].empty?
     session[:discount]    = valid_code?(session[:coupon_code])
   end

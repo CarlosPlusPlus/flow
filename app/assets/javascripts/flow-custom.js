@@ -81,6 +81,7 @@ $('document').ready(function(){
             $("#flow-cost").animate({ backgroundColor: "green", color: "white"},1000);
             $("#flow-cost").animate({ backgroundColor: "white", color: "black"},1000);
           } else {
+            $("#flow-cost").text("$" + result.price)
             $("#coupon-input").val("").attr("placeholder", "Invalid Coupon Code");
 
             $("#flow-cost").animate({ backgroundColor: "red", color: "white"},1000);
