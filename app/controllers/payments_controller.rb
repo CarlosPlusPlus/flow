@@ -20,11 +20,10 @@ class PaymentsController < ApplicationController
              merge(coupon_code: session[:coupon_code]).
              merge(discount:    session[:discount])) if @valid_install
 
-    reset_coupon_variables
-
     # Generate iframe only if shipping (installation) zip code is valid.
     respond_to do |format|
       if @valid_install
+        reset_coupon_variables
         format.js
       else
         format.js { render :action => 'error' }
@@ -35,6 +34,8 @@ class PaymentsController < ApplicationController
   private
 
   def check_coupon_code
+    reset_coupon_variables
+
     session[:coupon_code] = params['code'] unless params['code'].empty?
     session[:discount]    = valid_coupon_code?(session[:coupon_code])
   end
