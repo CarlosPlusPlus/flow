@@ -47,6 +47,7 @@ $('document').ready(function(){
     var paid = Math.ceil((600 / (bill * .25)));
     
     $("#calc-cost").text("$" + cost.toFixed(2));
+    $("#calc-save").text("$" + save.toFixed(2));
     $("#calc-paid").text(paid);
   });
 
