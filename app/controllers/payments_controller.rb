@@ -51,11 +51,19 @@ class PaymentsController < ApplicationController
   end
 
   def valid_zip_code?(zip_code)
-    zip_code =~ /#{ENV['FLOW_ZIP_REGEX']}/
+    zip_regex(zip_code) && zip_exclusion_check(zip_code)
   end
 
   def reset_coupon_variables
     session[:coupon_code] = nil
     session[:discount]    = false
+  end
+
+  def zip_regex(zip_code)
+    zip_code =~ /#{ENV['FLOW_ZIP_REGEX']}/
+  end
+
+  def zip_exclusion_check(zip_code)
+    !(ENV['FLOW_ZIP_EXCL'].split(',').include?(zip_code))
   end
 end

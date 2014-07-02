@@ -32,3 +32,4 @@ FLOW_DISCOUNT: Discount Cost of each FLOW Unit
 FLOW_REGEX:    RegEx for Coupon Code
 FLOW_COUPON_REGEX: RegEx for Coupon Code
 FLOW_ZIP_REGEX:    RegEx for Zip Code Inclusion
+FLOW_ZIP_EXCL:     List of Zip Codes to Exclude
